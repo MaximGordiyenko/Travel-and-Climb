@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Gordiyenko Maksym</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet'>
+    <link rel='stylesheet' type='text/css' href='css/styles.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+</head>
+<body>
+<!-- Navigation -->
+<nav>
+    <div class='container'>
+        <object type='image/png' data='http://www.jumpandclimb.com.au/wp-content/uploads/2015/03/jumpandclimblogo_med.png'></object>
+        <div>
+            <span class='menu-button'>Menu</span>
+            <span class='login-button'>Login</span>
+        </div>
+    </div>
+
+</nav>
+
+<!-- Nav Menu -->
+<div class='nav-menu hide'>  <!-- if this <div> block move up that form drop down to the upside-->
+    <div class='container'>
+        <ul>
+            <li>Programs</li>
+            <li class="campus-board"><a href="Programs.html#campus-training">Campus board training</a></li>
+            <li class="finger-board"><a href="Programs.html#finger-training">Finger board training</a></li>
+            <li class="peg-board"><a href="Programs.html#peg-board-training">Peg board training</a></li>
+            <li class="roller-pull"><a href="Programs.html#roller-bar-training">Roller pull-up training</a></li>
+            <li class="trx"><a href="Programs.html#trx-training">TRX training</a></li>
+        </ul>
+        <ul>
+            <li>Climbing Technique</li>
+            <li class="roll-heal"><a href="Programs.html#roll-heal-training">Roll on heal</a></li>
+            <li class="drop-knee"><a href="Programs.html#drop-knee-training">Drop of knee</a></li>
+            <li class="jump-up"><a href="Programs.html#jump-up-training">Jump-up</a></li>
+            <li class="tap-on-tip"><a href="Programs.html#tap-on-tip-training">Tap on tip</a></li>
+            <li class="front-step"><a href="Programs.html#front-step-training">Front step</a></li>
+            <li class="back-step"><a href="Programs.html#back-step-training">Back step</a></li>
+        </ul>
+        <ul>
+            <li>Contact</li>
+            <li class="youtube"><a href="https://www.youtube.com/channel/UCpK0AdV2VODYn8fPr69tyyg">YouTube</a></li>
+            <li class="facebook"><a href="https://www.facebook.com/GordiyenkoMaxim">Facebook</a></li>
+            <li class="instagram"><a href="https://www.instagram.com/maximgordiyenko/">Instagram</a></li>
+            <li class="email"><a href="mailto:maxim.gordiyenko@gmail.com">Email</a></li>
+            <li class="telephone"><a href="tel: +380689320050">0689320050</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Login Form -->
+<div class='login-form'>
+    <div class='container'>
+        <form>
+            <h4>Username</h4>
+            <input name='userId' class='username' placeholder="example: Maxim"/>  <!--TODO: info here: https://www.w3schools.com/html/html_form_input_types.asp-->
+            <h4>Password</h4>
+            <input type='password' placeholder="should be 8 characters"/>
+            <input class='sign-in-button' type='submit' value='Sign In' />
+        </form>
+    </div>
+</div>
+
+<!-- Details about travel -->
+<div class='container' ng-app='albSpain' ng-controller='AlbController'> <!--This <div> contain AngularJS application with controller that refer  to the controller with the ng-controller directive:-->
+    <div class='product-card'>
+        <div class='product-photo spain-alb'></div>
+        <div class='product-details'>
+            <h4>{{title}}</h4> <!--AngularJS expressions are written inside double braces: {{ expression }}-->
+            <div>
+                <p>{{product.price | currency}}</p> <!--AngularJS will "output" data exactly where the expression is written. It's expression with filter-->
+                <div class='more-details-button alba-arrow'>  <!-- Block <div> contain two classes between each space-->
+                    <img src='image/right-arrow.svg'/>  <!--https://www.w3schools.com/html/html_filepaths.asp - info about-->
+                </div>
+            </div>
+        </div>
+
+        <div class='shoe-details alba-details'> <!-- block <div< has two classes which separated by whitespace -->
+            <p>The unique climbing area for bouldering on the vulcan stone and lead climbing in the canyon look like Grand Canyon</p>
+            <div class='info-chart'>
+                <h4>Journey plane:</h4>
+                <ul class='places'>
+                    <li><a href="" target="_blank">Albaraccin</a></li> <!--target = blank opens page in new window-->
+                    <li><a href="" target="_blank">Bunol</a></li>
+                    <li>Chulilla</li>
+                    <li>Xabia</li>
+                    <li>Valencia</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> <!--The ng-app directive defines an AngularJS application.-->
+
+<div class='container'>
+    <div class='product-card'>
+        <div class='product-photo italy-gaeta'></div>
+        <div class='product-details'>
+            <h4>Italy, Gaeta</h4>
+            <div>
+                <p>800 EURO</p>
+                <div class='more-details-button gaeta-arrow'>
+                    <img src='image/right-arrow.svg'/> <!--https://www.w3schools.com/html/html_filepaths.asp - info about-->
+                </div>
+            </div>
+        </div>
+
+        <div class='shoe-details gaeta-details'>
+            <p>Amazing hidden climbing place from city vanity, where is sea and climbing beach has met.</p>
+            <div class='info-chart'>
+                <h4>Trip plan:</h4>
+                <ul class='places'>
+                    <li>Napoli</li>
+                    <li>Gaeta</li>
+                    <li>Positano</li>
+                    <li>Solfatara</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class='container'>
+    <div class='product-card'>
+        <div class='product-photo france-chamonix'></div>
+        <div class='product-details'>
+            <h4>France, Chaminix</h4>
+            <div>
+                <p>600 EURO</p>
+                <div class='more-details-button chamonix-arrow'>
+                    <img src='image/right-arrow.svg'/>   <!--https://www.w3schools.com/html/html_filepaths.asp - info about-->
+                </div>
+            </div>
+        </div>
+        <div class='shoe-details chamonix-details'>
+            <p>The travel program includes visit different places which includes climbing part and entertainment part</p>
+            <div class='info-chart'>
+                <h4>Journey places:</h4>
+                <ul class='places'>
+                    <li>Rock climbing area</li>
+                    <li>Climbing World Cup</li>
+                    <li>Hiking to the lakes</li>
+                    <li>Hiking to the glacier</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Logo and contact -->
+<footer>
+    <div class='container'>
+        <object type='image/png' data='http://www.jumpandclimb.com.au/wp-content/uploads/2015/03/jumpandclimblogo_med.png'></object>
+        <div><span>&reg Maxim Gordiyenko</span></div>
+    </div>
+</footer>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+<script src='js/main.js'></script> <!--Path to the folder with jQuery file-->
+
+<!--AngularJS modules-->
+<script src="js/app.js"></script> <!--Path to the folder with Angular application-->
+
+<!--AngularJS Controllers-->
+<script src="js/controllers/MainController.js"></script> <!--Path to the folder with Angular controller-->
+</body>
+</html>

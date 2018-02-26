@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.1s; }
+
+body {
+    background-image: url("https://i.pinimg.com/736x/9c/42/d5/9c42d57f459c3f31125a0623a3963d4e--the-rise-the-modern.jpg");
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+    text-align: left;
+    font-size: 18px;
+    color: #303030; }
+/*TODO: Changing property 'a href' hyperlink JQuery can acsess to the stylesheet 'style.css' to the specific element*/
+a{
+    text-decoration: none;
+    color: #efeded;  }
+
+.container{
+    max-width: 650px;
+    margin: 0 auto; }
+
+h3 {
+    color: #C3FF00;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+
+h4 {
+    text-transform: uppercase; }
+
+nav {
+    background-color: #444444;  }
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+nav .container object {
+    width: 4.5em;
+    padding: 0.2em 0.4em; }
+nav .container .login-button{
+    border-radius: 1em;
+    color: #efefef;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 1em 1.2em;
+    -webkit-user-select: none;  /*TODO: Prevent text selection of a <div> element for Safary*/
+    -moz-user-select: none;     /*TODO: Prevent text selection of a <div> element for Mozilla*/
+    -ms-user-select: none;      /*TODO: Prevent text selection of a <div> element for IE*/
+    user-select: none;          /*TODO: ... Standard syntax */
+    cursor: pointer;
+}
+nav .container .menu-button {
+    border-radius: 1em;
+    color: #efefef;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 1em 1.2em;
+    -webkit-user-select: none;  /*TODO: Prevent text selection of a <div> element for Safary*/
+    -moz-user-select: none;     /*TODO: Prevent text selection of a <div> element for Mozilla*/
+    -ms-user-select: none;      /*TODO: Prevent text selection of a <div> element for IE*/
+    user-select: none;          /*TODO: ... Standard syntax */
+    cursor: pointer; }
+
+.nav-menu {
+    background-color: #535353;
+    display: flex;
+    justify-content: center; }
+.nav-menu .container {
+    padding: 1.5em;
+    display: flex; }
+.nav-menu .container ul {
+    list-style: none; }
+.nav-menu .container ul li {
+    padding: 0.25em 2em; }
+.nav-menu .container ul li:first-child {
+    text-transform: uppercase;
+    color: #C3FF00;
+    letter-spacing: 0.05em; }
+
+.hide {
+    display: none; }
+
+.login-form {
+    background-color: #535353;
+    padding: 1em 0 0;
+    color: #EFEFEF;
+    display: none; }
+
+.login-form .container {
+    padding: 0 0.5em; }
+.login-form h4 {
+    font-weight: 400; }
+.login-form input {
+    width: calc(100% - 1em);
+    border: none;
+    height: 2em;
+    margin: 0.5em 0;
+    font-size: 1em;
+    padding: 0 0.5em; }
+.login-form .sign-in-button {
+    background-color: #303030;
+    color: #C3FF00;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    width: 100%;
+    height: 2.5em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer; }
+
+.product-card {
+    margin: 1em 0; }
+.product-card .france-chamonix,
+.product-card .spain-alb,
+.product-card .italy-gaeta {
+    background-size: 100%;
+    background-position: center;
+    height: 14em;
+    transition: 0.2s; }
+.product-card .spain-alb {
+    background-image: url("../photo/maxCulil.JPG"); }
+.product-card .italy-gaeta {
+    background-image: url("../photo/gaetaRope.JPG"); }
+.product-card .france-chamonix {
+    background-image: url("../photo/chamonix.jpg"); }
+.product-card .photo-active {
+    background-size: 30.8em 16.5em;
+    transition: 0.2s; }
+.product-card .product-details {
+    margin-top: -5px;
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: space-between; }
+.product-card .product-details h4,
+.product-card .product-details p {
+    padding: 0.7em 1.25em; }
+.product-card .product-details div {
+    display: flex; }
+.product-card .product-details .more-details-button {
+    background-color: #444444;
+    padding: 0.75em 1.25em;
+    cursor: pointer;
+    width: 1em;
+    transition: 0.1s; }
+.product-card .product-details .more-details-button img {
+    position: relative;
+    left: 0.1em; }
+.product-card .product-details .more-details-button .rotate {
+    transition: 0.1s;
+    transform: rotate(90deg); }
+.product-card .shoe-details {
+    display: none;
+    background-color: #535353;
+    color: #efeded; }
+.product-card .shoe-details .active {
+    background-color: #C3FF00;
+    color: #303030; }
+.product-card .info-chart,
+.product-card p {
+    padding: 1em 1.25em; }
+.product-card .info-chart ul,
+.product-card p ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em; }
+.product-card .info-chart ul li,
+.product-card p ul li {
+    padding: 0.5em;
+    background-color: #303030;
+    width: 100%;
+    text-align: center;
+    text-blink: red;
+    margin-right: 2px; }
+
+footer {
+    color: #c3ff00;
+    background-color: #303030;
+    margin-top: 1em;
+    padding: 1.2em 0.5em; }
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1em; }
+
+footer .container object {
+    width: 4.5em;  }
